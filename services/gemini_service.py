@@ -23,7 +23,7 @@ def initialize_gemini():
         # Thêm .strip() để xóa hết khoảng trắng thừa
         cleaned_key = api_key.strip()
         genai.configure(api_key=cleaned_key)
-        return genai.GenerativeModel('gemini-2.5-flash-lite')
+        return genai.GenerativeModel('gemini-2.5-flash')
     except Exception as e:
         # Nếu lỗi API
         st.error(f"LỖI CẤU HÌNH: Key API không hợp lệ. Hãy tạo Key mới.")
