@@ -281,7 +281,7 @@ CHỈ trả về JSON array, không giải thích gì thêm.
 """
     
     try:
-        model = genai.GenerativeModel('gemini-2.0-flash-exp')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         response = model.generate_content(prompt)
         response_text = response.text
         
